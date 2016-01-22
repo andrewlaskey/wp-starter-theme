@@ -1,0 +1,10 @@
+.project
+
+.DS_Store
+
+.npm-debug.log
+
+bower_components
+node_modules
+
+theme_files/dist

@@ -1,0 +1,20 @@
+{
+  "name": "peter-guber",
+  "version": "1.0.0",
+  "description": "Wordpress Theme for Peter Guber",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:idiom-interactive/peter-guber.git"
+  },
+  "author": "Idiom Interactive",
+  "license": "No License",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.1",
+    "gulp-uglify": "^1.5.1"
+  }
+}
