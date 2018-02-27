@@ -1,0 +1,30 @@
+// ICONS
+//////////////////////
+
+.icon svg {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+	vertical-align: middle;
+}
+
+.sr-only {
+	@extend %screen-reader-text;
+}
+
+/* =======================================================================================
+Example showing how to change the color/size of the icons:
+.icon-name {
+	font-size: 32px; // works because "width" & "height" were set using em units
+	color: red; // works for single-colored icons, because "fill" was set to "currentColor"
+}
+======================================================================================== */
+
+
+// SVG LOGOS
+.logo {
+	display: block;
+	width: 100%;
+	vertical-align: middle;
+}

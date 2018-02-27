@@ -1,0 +1,95 @@
+// GRID (uses grid mixin)
+//////////////////////
+
+%wrapper {
+    @extend %outer-container;
+    
+    @include media("<=#{$grid-max-width}") {
+        padding-left: $gutter;
+        padding-right: $gutter;
+    }
+
+    @include media("<=phone") {
+        padding-left: $gutter/2;
+        padding-right: $gutter/2;
+    }
+}
+ 
+.row {
+    @include row(true);
+}
+      
+[class*='gc-'] {
+    position: relative;
+    width: 100%;
+    min-height: 1px; 
+}
+
+$breakpoint-list: ">phone" ">tablet" ">desktop" ">xlarge";
+$grid-size-list: sm md lg xl;
+
+@each $current-size in $grid-size-list {
+    $k: index($grid-size-list, $current-size);
+
+    @include media(nth($breakpoint-list, $k)) {
+
+        @for $i from 1 through $grid-columns {
+        
+            .gc-#{$current-size}-#{$i} {
+                @include col($i/$grid-columns, true);
+            }
+
+            .gc-#{$current-size}--os-#{$i} {
+                margin-left: ($i/$grid-columns) * 100%;
+            }
+
+            .gc-#{$current-size}--ps-#{$i} {
+                left: ($i/$grid-columns) * 100%;
+            }
+
+            .gc-#{$current-size}--pl-#{$i} {
+                right: ($i/$grid-columns) * 100%;
+            }
+        }
+
+        .gc-#{$current-size}--dlp {
+            padding-left: 0;
+        }
+
+        .gc-#{$current-size}--drp {
+            padding-right: 0;
+        }
+    }
+}
+
+@for $i from 1 through $grid-columns {
+        
+    .gc-all-#{$i} {
+        @include col($i/$grid-columns, true);
+    }
+}
+
+
+.gc--c {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hide-for-phone {
+    @include media("<=phone") {
+        display: none;
+    }
+}
+
+.hide-for-tablet {
+    @include media(">phone","<desktop") {
+        display: none;
+    }
+}
+
+.hide-for-desktop {
+    @include media(">=desktop") {
+        display: none;
+    }
+}

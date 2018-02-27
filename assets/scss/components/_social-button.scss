@@ -1,0 +1,51 @@
+.social-button {
+	height: 2rem;
+	width: 2rem;
+	border-radius: 50%;
+	color: $white;
+	font-size: 1.5em;
+
+	@include hfa {
+		color: $white;
+	}
+
+	&.social-button-facebook {
+		background: $facebook; 
+
+		@include hfa {
+			background: darken($facebook, 10%); 
+		}
+	}
+
+	&.social-button-twitter {
+		background: $twitter;
+
+		@include hfa {
+			background: darken($twitter, 10%); 
+		}
+	}
+
+	&.social-button-instagram {
+		background: $instagram;
+
+		@include hfa {
+			background: darken($instagram, 10%); 
+		}
+	}
+
+	&.social-button-pinterest {
+		background: $pinterest;
+
+		@include hfa {
+			background: darken($pinterest, 10%); 
+		}
+	}
+
+	&.social-button-youtube {
+		background: $youtube;
+
+		@include hfa {
+			background: darken($youtube, 10%); 
+		}
+	}
+}

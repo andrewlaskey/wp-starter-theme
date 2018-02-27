@@ -1,0 +1,49 @@
+.custom-select {
+	position: relative;
+	margin-bottom: 1em;
+	width: 100%;
+	border: none;
+	background: $body-bg;
+	border-radius: $border-radius;
+	font-size: $h6-font-size;
+	line-height: 1.5;
+
+	select {
+		position: relative;
+		padding: 9px 12px;
+		color: $body-color;
+		border: 2px solid $body-bg;
+		border-radius: $border-radius;
+		background: transparent;
+		outline: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		line-height: 1.5;
+		width: 100%;
+		z-index: 10;
+
+		&:focus,
+		&:active {
+			outline: none;
+			border-color: $secondary-color;
+		}
+
+		&.disabled {
+			color: $grey-4;
+			font-style: italic;
+		}
+	}
+
+	&:after {
+		position: absolute;
+		top: 18px;
+		right: 10px;
+		content: '';
+		width: 0; 
+		height: 0; 
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-top: 8px solid $body-color;
+	}
+}

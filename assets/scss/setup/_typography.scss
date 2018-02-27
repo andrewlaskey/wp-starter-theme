@@ -1,0 +1,179 @@
+// TYPOGRAPHY
+//////////////////////
+
+
+// Base type styles
+///////////////////////////////
+body {
+  color: $body-color;
+  font-family: $base-font-family;
+  font-size: $deca; // 18px default
+  -webkit-font-smoothing: antialiased;
+  line-height: $base-line-height;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font-family;
+  font-weight: normal;
+  margin: 0;
+  text-rendering: optimizeLegibility; // Fix the character spacing for headings
+}
+
+h1, .h1 {
+  margin-bottom: 16px;
+  font-size: $h1-font-size;
+  font-weight: 900;
+  color: $blue-dark-1;
+  line-height: 1.175;
+}
+
+h2, .h2 {
+  margin-bottom: 29px;
+  font-size: $h2-font-size;
+  font-weight: 700;
+  color: $blue-dark-1;
+  line-height: 1.1667;
+
+  @include media("<=phone") {
+    font-size: 28px;
+  }
+}
+
+h3, .h3 {
+  margin-bottom: 10px;
+  font-size: $h3-font-size;
+  font-weight: 700;
+  color: $blue-light-1;
+  line-height: 1.1667;
+
+  @include media("<=phone") {
+    font-size: 24px;
+  }
+}
+
+h4, .h4 {
+  margin-bottom: 10px;
+  font-size: $h4-font-size;
+  font-weight: 500;
+  color: $blue-dark-2;
+  line-height: 1.227;
+}
+
+h5, .h5 {
+  margin-bottom: 12px;
+  font-size: $h5-font-size;
+  font-weight: 500;
+  line-height: 1;
+}
+
+h6, .h6 {
+  font-size: $h6-font-size;
+}
+
+p {
+  margin: 0 0 22px;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+small {
+	font-size: $h6-font-size;
+}
+
+a {
+  color: $link-color;
+
+  @include hfa {
+    color: $hover-link-color;
+  }
+}
+
+hr {
+  margin: $base-line-height 0;
+}
+
+img {
+  margin: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+abbr, acronym {
+	cursor: help;
+}
+
+address {}
+
+hgroup {}
+
+del {}
+
+blockquote {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 11px 24px 15px;
+  font-size: 32px;
+  line-height: 1.3;
+  border-left: 2px solid $blue-light-2;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+cite {}
+
+pre {}
+
+figure:not(.image-link) {
+  table-layout: fixed;
+  display: table;
+  max-width: 100%;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  figcaption {
+    display: table-caption;
+    caption-side: bottom;
+  }
+}
+
+ul,
+ol {
+  li {
+    padding-bottom: 0.75em;
+  }
+}
+
+input {
+  border-radius: 0;
+}
+
+// Typography helpers
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-primary {
+  color: $blue-dark-1;
+}
+
+.text-secondary {
+  color: $pink;
+}
+
+.text-warning {
+  color: $red;
+}
+
+.text-upper {
+  text-transform: uppercase;
+}

@@ -1,0 +1,15 @@
+@mixin hfa {
+	&:hover,
+	&:focus,
+	&:active {
+		@content;
+	}
+}
+
+@mixin hfa-not-disabled {
+	&:hover:not(:disabled),
+	&:focus:not(:disabled),
+	&:active:not(:disabled) {
+		@content;
+	}
+}

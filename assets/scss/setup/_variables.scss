@@ -1,0 +1,146 @@
+// COLORS
+//////////////////////
+
+$blue-light-1: #0A7787;
+$blue-light-2: #009AB2;
+$blue-light-3: #00B0D1;
+$blue-light-4: #ECF7F9;
+
+$blue-dark-1: #316275;
+$blue-dark-2: #0A4758;
+$blue-dark-3: #032630;
+
+$off-white: #F4F7F8;
+
+$grey-1: #EAEFF1;
+$grey-2: #D1D7DA;
+$grey-3: #899FA8;
+$grey-4: #627A84;
+
+$red: #A52E2E;
+$pink: #D22B79;
+$yellow: #FFB84A;
+
+$white: #FFF;
+$dark: $blue-dark-3;
+
+$body-bg: $white;
+$body-color: $dark;
+
+$primary-color: $blue-light-2;
+$secondary-color: $pink;
+
+$link-color: $grey-4;
+$hover-link-color: $blue-dark-3;
+
+$button-bg: $primary-color;
+$button-color: $body-bg;
+
+$header-color: $blue-dark-1;
+$footer-color: $blue-dark-1;
+
+$footer-bg: $grey-1;
+
+$border-color: $grey-2;
+
+// Typography
+///////////////////////////////////////////////////////////////////////////////
+
+// Web fonts
+$georgia: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+$helvetica: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+$lucida-grande: "Lucida Grande", "Tahoma", "Verdana", "Arial", sans-serif;
+$monospace: "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace;
+$verdana: "Verdana", "Geneva", sans-serif;
+
+$sans-serif: "Open Sans", $helvetica;
+$serif: $georgia;
+
+// Google Fonts
+$roboto: 'Roboto', $sans-serif;
+$lato: 'Lato', $sans-serif;
+
+
+$base-font-family: $lato;
+$header-font-family: $roboto;
+
+// Sizes
+///////////////////////////////////////////////////////////////////////////////
+
+$border-radius: 5px;
+
+// Spacing
+$base-size: 8px;
+$section-padding: 20px;
+
+// Fonts
+$base-font-size: 16px;
+$base-line-height: 1.36;
+
+$giga: 40px;
+$mega: 36px;
+$kilo: 30px;
+$hecto: 22px;
+$deca: 18px;
+$deci: 14px;
+
+$h1-font-size: $giga;
+$h2-font-size: $mega;
+$h3-font-size: $kilo;
+$h4-font-size: $hecto;
+$h5-font-size: $base-font-size;
+$h6-font-size: $deci;
+
+// Buttons
+$button-font-size: $h6-font-size;
+$button-padding: 17px 0;
+
+// Grid
+///////////////////////////////////////////////////////////////////////////////
+$grid-max-width: 1180px;
+$grid-columns: 8;
+$gutter: 35px;
+
+// Breakpoints
+///////////////////////////////////////////////////////////////////////////////
+$breakpoints: (phone: 580px, tablet: 768px, desktop: 1024px, medium: 1100px, large: 1440px, xlarge: 1920px);
+
+// Animation
+///////////////////////////////////////////////////////////////////////////////
+
+$default-duration: 0.2s;
+$long-duration: 0.35s;
+$half-second: 0.5s;
+
+// CSS cubic-bezier timing functions. Timing functions courtesy of jquery.easie (github.com/jaukia/easie)
+// Timing functions are the same as demo'ed here: http://jqueryui.com/demos/effect/easing.html
+
+// EASE IN
+$ease-in-quad:      cubic-bezier(0.550,  0.085, 0.680, 0.530);
+$ease-in-cubic:     cubic-bezier(0.550,  0.055, 0.675, 0.190);
+$ease-in-quart:     cubic-bezier(0.895,  0.030, 0.685, 0.220);
+$ease-in-quint:     cubic-bezier(0.755,  0.050, 0.855, 0.060);
+$ease-in-sine:      cubic-bezier(0.470,  0.000, 0.745, 0.715);
+$ease-in-expo:      cubic-bezier(0.950,  0.050, 0.795, 0.035);
+$ease-in-circ:      cubic-bezier(0.600,  0.040, 0.980, 0.335);
+$ease-in-back:      cubic-bezier(0.600, -0.280, 0.735, 0.045);
+
+// EASE OUT
+$ease-out-quad:     cubic-bezier(0.250,  0.460, 0.450, 0.940);
+$ease-out-cubic:    cubic-bezier(0.215,  0.610, 0.355, 1.000);
+$ease-out-quart:    cubic-bezier(0.165,  0.840, 0.440, 1.000);
+$ease-out-quint:    cubic-bezier(0.230,  1.000, 0.320, 1.000);
+$ease-out-sine:     cubic-bezier(0.390,  0.575, 0.565, 1.000);
+$ease-out-expo:     cubic-bezier(0.190,  1.000, 0.220, 1.000);
+$ease-out-circ:     cubic-bezier(0.075,  0.820, 0.165, 1.000);
+$ease-out-back:     cubic-bezier(0.175,  0.885, 0.320, 1.275);
+
+// EASE IN OUT
+$ease-in-out-quad:  cubic-bezier(0.455,  0.030, 0.515, 0.955);
+$ease-in-out-cubic: cubic-bezier(0.645,  0.045, 0.355, 1.000);
+$ease-in-out-quart: cubic-bezier(0.770,  0.000, 0.175, 1.000);
+$ease-in-out-quint: cubic-bezier(0.860,  0.000, 0.070, 1.000);
+$ease-in-out-sine:  cubic-bezier(0.445,  0.050, 0.550, 0.950);
+$ease-in-out-expo:  cubic-bezier(1.000,  0.000, 0.000, 1.000);
+$ease-in-out-circ:  cubic-bezier(0.785,  0.135, 0.150, 0.860);
+$ease-in-out-back:  cubic-bezier(0.680, -0.550, 0.265, 1.550);

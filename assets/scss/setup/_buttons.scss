@@ -1,0 +1,108 @@
+// BUTTONS
+//////////////////////
+
+button,
+input[type="submit"],
+a.button,
+nav li.button a {
+	position: relative;
+	display: inline-block;
+	padding: $button-padding;
+	width: 165px;
+	background-color: $button-bg;
+	color: $button-color;
+	line-height: 1;
+	font-size: $button-font-size;
+	font-weight: bold;
+	font-family: $header-font-family;
+	border: 1px solid $button-bg;
+	border-radius: $border-radius;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-clip: border-box;
+	outline: none;
+	cursor: pointer;
+
+	.icon {
+		//vertical-align: -0.1em;
+	}
+
+	@include hfa {
+		color: $button-color;
+		outline: none;
+		opacity: 0.8;
+		text-decoration: none;
+	}
+
+	&.button-secondary {
+		border-color: $secondary-color;
+		background-color: $secondary-color;
+	}
+
+	&.button-share {
+		margin-right: 9px;
+		padding: 11px 32px 12px 20px;
+		width: 150px;
+		font-size: 10px;
+		border-radius: 50px;
+
+		.icon {
+			margin-right: 26px;
+			font-size: 14px;
+			vertical-align: -3px;
+		}
+
+		@include media("<=phone") {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 34px;
+			height: 34px;
+			padding: 0;
+
+			.icon {
+				margin-right: 0;
+			}
+			
+			span {
+				display: none;
+			}
+		}
+	}
+
+	&.button-hollow {
+		color: $button-bg;
+		border-color: $button-bg;
+		background-color: $body-bg;
+	}
+
+	&.button-twitter {
+		border-color: $twitter;
+		background-color: $twitter;
+	}
+
+	&.button-facebook {
+		border-color: $facebook;
+		background-color: $facebook;
+	}
+
+	&.button-google {
+		border-color: $googleplus;
+		background-color: $googleplus;
+	}
+}
+
+.button-icon-left {
+	.icon {
+		margin-right: 10px;
+	}
+}
+
+.button-icon-right {
+	.icon {
+		margin-left: 10px;
+	    height: 16px;
+	    vertical-align: -2px;
+	}
+}
